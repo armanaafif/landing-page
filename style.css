@@ -1,47 +1,34 @@
 /**
- * =================================================================
+ * ═══════════════════════════════════════════════════════════════════
  * UNIVERSITAS NGUDI WALUYO (UNW) - PMB WEBSITE
- * =================================================================
- * File: style.css
- * Tujuan: Styling untuk halaman index.html dan prodi.html
- * Fitur: Responsive, modern, animasi halus, sticky navbar
- * =================================================================
+ * ═══════════════════════════════════════════════════════════════════
+ * Tagline: UNW Berdikari (Berbudaya Sehat, Disiplin, Karakter Unggul, Mandiri)
+ * Semboyan: Kampusnya Para Juara
+ * ═══════════════════════════════════════════════════════════════════
  */
 
 /* ==================== RESET CSS ==================== */
-/* Menghapus margin/padding default browser agar konsisten */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ==================== VARIABEL WARNA (CSS CUSTOM PROPERTIES) ==================== */
+/* ==================== VARIABEL WARNA ==================== */
 :root {
     --primary: #1e3a5f;
-    /* Biru akademik - warna utama */
     --primary-dark: #0f2b44;
-    /* Biru lebih gelap untuk hover */
     --primary-light: #2c5a8c;
-    /* Biru lebih terang untuk aksen */
     --secondary: #c89d3c;
-    /* Emas - warna aksen elegan */
     --secondary-light: #e0b354;
-    /* Emas terang */
+    --accent-gold: #ffd700;
     --text-dark: #1e2a3a;
-    /* Warna teks gelap */
     --text-gray: #475569;
-    /* Warna teks abu-abu */
     --bg-light: #f8fafc;
-    /* Latar belakang terang */
     --white: #ffffff;
-    /* Putih */
     --shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.1);
-    /* Bayangan */
     --shadow-hover: 0 25px 40px -12px rgba(0, 0, 0, 0.15);
-    /* Bayangan hover */
     --transition: all 0.3s ease;
-    /* Transisi halus */
 }
 
 /* ==================== GAYA DASAR ==================== */
@@ -50,15 +37,12 @@ body {
     line-height: 1.6;
     color: var(--text-dark);
     overflow-x: hidden;
-    /* Mencegah scroll horizontal */
 }
 
-/* Smooth scrolling untuk seluruh halaman */
 html {
     scroll-behavior: smooth;
 }
 
-/* Container - membatasi lebar konten agar rapi */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -80,12 +64,10 @@ h2 {
     line-height: 1.2;
 }
 
-/* Warna highlight (emas) untuk kata kunci */
 .highlight {
     color: var(--secondary);
 }
 
-/* Header section - judul dan deskripsi di tengah */
 .section-header {
     text-align: center;
     margin-bottom: 3rem;
@@ -98,17 +80,29 @@ h2 {
     margin: 0 auto;
 }
 
-/* Padding vertikal untuk section */
 .section-padding {
     padding: 5rem 0;
 }
 
-/* Latar belakang abu-abu terang */
 .bg-light {
     background-color: var(--bg-light);
 }
 
-/* ==================== BUTTON / TOMBOL ==================== */
+/* ==================== TAGLINE UNW BERDIKARI ==================== */
+.tagline {
+    font-size: 1.2rem;
+    color: var(--secondary);
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.footer-tagline {
+    color: var(--secondary);
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* ==================== BUTTONS ==================== */
 .btn {
     display: inline-flex;
     align-items: center;
@@ -123,7 +117,6 @@ h2 {
     font-size: 1rem;
 }
 
-/* Tombol utama (biru) */
 .btn-primary {
     background: var(--primary);
     color: white;
@@ -136,7 +129,6 @@ h2 {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Tombol outline (transparan dengan border) */
 .btn-outline {
     background: transparent;
     border: 2px solid var(--primary);
@@ -149,7 +141,6 @@ h2 {
     transform: translateY(-3px);
 }
 
-/* Tombol WhatsApp (hijau khas WA) */
 .btn-wa {
     background: #25D366;
     color: white;
@@ -160,25 +151,27 @@ h2 {
     transform: translateY(-3px);
 }
 
-/* Ukuran tombol besar */
 .btn-large {
     padding: 14px 36px;
     font-size: 1.1rem;
 }
 
-/* ==================== NAVBAR (STICKY) ==================== */
+.btn-block {
+    width: 100%;
+    justify-content: center;
+}
+
+/* ==================== NAVBAR STICKY ==================== */
 .navbar {
     background: var(--white);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     position: sticky;
-    /* Membuat navbar tetap di atas saat scroll */
     top: 0;
     width: 100%;
     z-index: 1000;
     transition: var(--transition);
 }
 
-/* Flexbox untuk menyusun logo dan menu */
 .nav-container {
     display: flex;
     justify-content: space-between;
@@ -186,7 +179,6 @@ h2 {
     padding: 1rem 24px;
 }
 
-/* Logo UNW */
 .logo a {
     font-size: 1.6rem;
     font-weight: 800;
@@ -201,7 +193,6 @@ h2 {
     color: var(--secondary);
 }
 
-/* Menu navigasi desktop */
 .nav-menu {
     display: flex;
     gap: 2rem;
@@ -216,28 +207,12 @@ h2 {
     padding: 8px 0;
 }
 
-/* Hover dan active menu */
 .nav-menu a:hover,
 .nav-menu a.active {
     color: var(--secondary);
     border-bottom: 2px solid var(--secondary);
 }
 
-/* Tombol CTA khusus di navbar */
-.cta-nav {
-    background: var(--primary);
-    color: white !important;
-    padding: 8px 20px !important;
-    border-radius: 30px;
-    border-bottom: none !important;
-}
-
-.cta-nav:hover {
-    background: var(--primary-dark);
-    transform: translateY(-2px);
-}
-
-/* Tombol hamburger (hidden di desktop) */
 .mobile-toggle {
     display: none;
     background: none;
@@ -253,7 +228,6 @@ h2 {
     background: linear-gradient(135deg, #f0f9ff 0%, #e6f0fa 100%);
 }
 
-/* Grid 2 kolom (gambar + teks) */
 .hero-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -261,7 +235,6 @@ h2 {
     gap: 3rem;
 }
 
-/* Badge kecil di hero */
 .hero-badge {
     background: var(--secondary-light);
     color: var(--primary-dark);
@@ -271,6 +244,10 @@ h2 {
     font-size: 0.8rem;
     font-weight: bold;
     margin-bottom: 1rem;
+}
+
+.hero-content h1 {
+    font-size: 2.8rem;
 }
 
 .hero-buttons {
@@ -286,155 +263,159 @@ h2 {
     box-shadow: var(--shadow);
 }
 
-/* ==================== FEATURE CARD (TENTANG PMB) ==================== */
-.features-grid {
+/* ==================== NILAI BERDIKARI ==================== */
+.berdikari-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
 }
 
-.feature-card {
+.berdikari-card {
     background: white;
     padding: 2rem;
     border-radius: 20px;
     text-align: center;
     transition: var(--transition);
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.02);
-    border: 1px solid #eef2f6;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    border-bottom: 4px solid var(--secondary);
 }
 
-.feature-card:hover {
+.berdikari-card:hover {
     transform: translateY(-10px);
     box-shadow: var(--shadow-hover);
 }
 
-.feature-icon {
+.berdikari-icon {
     font-size: 2.8rem;
     color: var(--secondary);
     margin-bottom: 1rem;
 }
 
-/* ==================== ALUR PENDAFTARAN ==================== */
-.alur-grid {
+/* ==================== JALUR PENDAFTARAN ==================== */
+.jalur-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
 }
 
-.alur-step {
-    background: white;
-    padding: 2rem 1.5rem;
-    border-radius: 20px;
-    text-align: center;
-    position: relative;
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
-}
-
-/* Nomor langkah (lingkaran di pojok kiri atas) */
-.step-number {
-    position: absolute;
-    top: -15px;
-    left: 20px;
-    background: var(--secondary);
-    color: white;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    font-weight: bold;
-    font-size: 1.3rem;
-}
-
-.step-icon {
-    font-size: 2.5rem;
-    color: var(--primary);
-    margin-bottom: 1rem;
-}
-
-/* ==================== KEUNGGULAN KAMPUS ==================== */
-.keunggulan-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-}
-
-.keunggulan-card {
+.jalur-card {
     background: white;
     padding: 2rem;
     border-radius: 20px;
     text-align: center;
     transition: var(--transition);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    position: relative;
 }
 
-.keunggulan-card i {
+.jalur-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-hover);
+}
+
+.jalur-card i {
     font-size: 2.5rem;
     color: var(--secondary);
     margin-bottom: 1rem;
 }
 
-/* Efek hover: card berubah warna menjadi biru */
-.keunggulan-card:hover {
-    transform: scale(1.02);
-    background: var(--primary);
-    color: white;
+.jalur-badge {
+    display: inline-block;
+    background: var(--secondary-light);
+    color: var(--primary-dark);
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 4px 12px;
+    border-radius: 30px;
+    margin-top: 1rem;
 }
 
-.keunggulan-card:hover i {
-    color: white;
-}
-
-/* ==================== FAQ (ACCORDION) ==================== */
-.faq-grid {
+/* ==================== TIMELINE ==================== */
+.timeline {
     max-width: 800px;
     margin: 0 auto;
 }
 
-.faq-item {
+.timeline-item {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
     background: white;
     border-radius: 16px;
-    margin-bottom: 1rem;
-    padding: 0 1.5rem;
-    cursor: pointer;
+    padding: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.timeline-date {
+    background: var(--secondary);
+    color: var(--primary-dark);
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-weight: bold;
+    white-space: nowrap;
+    height: fit-content;
+}
+
+.badge-early {
+    background: #2e7d32;
+    color: white;
+    font-size: 0.7rem;
+    padding: 2px 8px;
+    border-radius: 20px;
+    margin-left: 8px;
+}
+
+/* ==================== BEASISWA ==================== */
+.beasiswa-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.beasiswa-card {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: white;
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: center;
     transition: var(--transition);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
 }
 
-/* Pertanyaan FAQ */
-.faq-question {
+.beasiswa-card:hover {
+    transform: translateY(-5px);
+}
+
+.beasiswa-card i {
+    font-size: 2.5rem;
+    color: var(--secondary);
+    margin-bottom: 1rem;
+}
+
+/* ==================== SYARAT PENDAFTARAN ==================== */
+.syarat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.syarat-item {
+    background: white;
+    padding: 1rem;
+    border-radius: 12px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 1.2rem 0;
+    gap: 12px;
+    transition: var(--transition);
 }
 
-.faq-question h3 {
-    font-size: 1.1rem;
-    margin: 0;
-}
-
-.faq-question i {
-    transition: transform 0.3s ease;
+.syarat-item i {
+    font-size: 1.5rem;
     color: var(--secondary);
 }
 
-/* Jawaban FAQ (sembunyi sampai diklik) */
-.faq-answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease;
-}
-
-/* Saat FAQ aktif, jawaban muncul */
-.faq-item.active .faq-answer {
-    max-height: 200px;
-    padding-bottom: 1.2rem;
-}
-
-.faq-item.active .fa-chevron-down {
-    transform: rotate(180deg);
+.syarat-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 /* ==================== CTA SECTION ==================== */
@@ -461,7 +442,6 @@ h2 {
     flex-wrap: wrap;
 }
 
-/* Tombol di CTA section menggunakan warna emas */
 .cta-section .btn-primary {
     background: var(--secondary);
     color: var(--primary-dark);
@@ -531,7 +511,6 @@ h2 {
     font-size: 0.9rem;
 }
 
-/* Tombol sosial media */
 .social-links {
     display: flex;
     gap: 1rem;
@@ -580,7 +559,6 @@ h2 {
     background: #128C7E;
 }
 
-/* Tooltip saat hover */
 .tooltip-text {
     position: absolute;
     right: 70px;
@@ -601,7 +579,6 @@ h2 {
 }
 
 /* ==================== HALAMAN PRODI ==================== */
-/* Hero khusus halaman prodi */
 .hero-small {
     background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
     padding: 5rem 0 3rem;
@@ -613,14 +590,40 @@ h2 {
     color: white;
 }
 
-/* Grid program studi (card) */
+.filter-section {
+    padding: 2rem 0;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    padding: 8px 24px;
+    border-radius: 40px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background: var(--primary);
+    color: white;
+}
+
 .prodi-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
     gap: 2rem;
 }
 
-/* Card program studi */
 .prodi-card {
     background: white;
     border-radius: 24px;
@@ -635,6 +638,27 @@ h2 {
     box-shadow: var(--shadow-hover);
 }
 
+.featured-card {
+    border-left: 4px solid var(--secondary);
+    position: relative;
+}
+
+.featured-star {
+    background: var(--secondary-light);
+    color: var(--primary-dark);
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 3px 10px;
+    border-radius: 30px;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.featured-star i {
+    color: #ffc107;
+    margin-right: 4px;
+}
+
 .prodi-icon {
     font-size: 2.5rem;
     color: var(--secondary);
@@ -642,7 +666,7 @@ h2 {
 }
 
 .prodi-card h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 1rem;
     color: var(--primary);
 }
@@ -650,9 +674,9 @@ h2 {
 .prodi-desc {
     color: var(--text-gray);
     margin-bottom: 1.2rem;
+    font-size: 0.95rem;
 }
 
-/* Prospek karier - background abu-abu */
 .prospek {
     background: #f0f4f9;
     padding: 1rem;
@@ -666,123 +690,210 @@ h2 {
     margin-right: 5px;
 }
 
-/* CTA mini di bawah prodi */
-.cta-mini {
-    text-align: center;
+/* ==================== AKREDITASI BADGE ==================== */
+.akreditasi-badge {
+    display: inline-block;
+    background: #e0b354;
+    color: #1e2a3a;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 3px 10px;
+    border-radius: 30px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.akreditasi-badge.akreditasi-a {
+    background: #2e7d32;
+    color: white;
+}
+
+.akreditasi-badge.akreditasi-baik-sekali {
+    background: #0288d1;
+    color: white;
+}
+
+.akreditasi-badge.akreditasi-proses {
+    background: #ed6c02;
+    color: white;
+}
+
+.sumber-data {
+    font-size: 0.7rem;
+    color: #6c757d;
+    margin-top: 12px;
+    padding-top: 8px;
+    border-top: 1px solid #eef2f6;
+    font-style: italic;
+}
+
+/* ==================== INFO TAMBAHAN ==================== */
+.info-tambahan {
     margin-top: 3rem;
-    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.info-box {
+    background: #e8f0fe;
+    border-left: 4px solid var(--secondary);
+    padding: 1.2rem 1.5rem;
+    border-radius: 16px;
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.info-box i {
+    font-size: 1.5rem;
+    color: var(--secondary);
+    margin-top: 3px;
+}
+
+/* ==================== HALAMAN FASILITAS ==================== */
+.fasilitas-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.fasilitas-card {
+    background: white;
+    padding: 1.8rem;
+    border-radius: 20px;
+    text-align: center;
+    transition: var(--transition);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.fasilitas-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-hover);
+}
+
+.fasilitas-icon {
+    font-size: 2.5rem;
+    color: var(--secondary);
+    margin-bottom: 1rem;
+}
+
+.cta-mini-section {
+    padding: 3rem 0;
     background: var(--bg-light);
+    text-align: center;
+}
+
+/* ==================== HALAMAN KONTAK ==================== */
+.kontak-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.kontak-info {
+    background: white;
+    padding: 2rem;
     border-radius: 24px;
+    box-shadow: var(--shadow);
+}
+
+.info-list {
+    margin-top: 1.5rem;
+}
+
+.info-item {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eef2f6;
+}
+
+.info-item i {
+    font-size: 1.5rem;
+    color: var(--secondary);
+}
+
+.info-item h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.info-item p, .info-item a {
+    color: var(--text-gray);
+    text-decoration: none;
+}
+
+.kontak-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 24px;
+    box-shadow: var(--shadow);
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 3px rgba(200, 157, 60, 0.2);
+}
+
+.form-note {
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 1rem;
+    color: var(--text-gray);
+}
+
+.cta-wa-section {
+    padding: 3rem 0;
+    background: linear-gradient(135deg, #25D36610, #128C7E10);
+}
+
+.cta-wa-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 24px;
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+.cta-wa-box i {
+    font-size: 3rem;
+    color: #25D366;
+    margin-bottom: 1rem;
 }
 
 /* ==================== ANIMASI FADE-IN ==================== */
-/* Elemen dengan class ini awalnya tersembunyi */
 .fade-in-up {
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
-/* Saat class 'visible' ditambahkan (oleh JS), elemen muncul */
 .fade-in-up.visible {
     opacity: 1;
     transform: translateY(0);
 }
 
-/* Delay untuk efek bertahap */
-.delay-1 {
-    transition-delay: 0.1s;
-}
-
-.delay-2 {
-    transition-delay: 0.2s;
-}
-
-.delay-3 {
-    transition-delay: 0.3s;
-}
-
-/* ==================== RESPONSIVE (MOBILE & TABLET) ==================== */
-/* Mobile: max-width 768px */
-@media (max-width: 768px) {
-
-    /* Tampilkan tombol hamburger */
-    .mobile-toggle {
-        display: block;
-    }
-
-    /* Menu mobile muncul dari kiri */
-    .nav-menu {
-        position: fixed;
-        top: 70px;
-        left: -100%;
-        width: 80%;
-        height: calc(100vh - 70px);
-        background: white;
-        flex-direction: column;
-        padding: 2rem;
-        gap: 1.5rem;
-        box-shadow: 2px 0 20px rgba(0, 0, 0, 0.1);
-        transition: left 0.3s ease;
-        z-index: 1000;
-    }
-
-    .nav-menu.active {
-        left: 0;
-    }
-
-    /* Hero jadi 1 kolom (stack) */
-    .hero-grid {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .hero-buttons {
-        justify-content: center;
-    }
-
-    /* Ukuran font lebih kecil */
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1.6rem;
-    }
-
-    .section-padding {
-        padding: 3rem 0;
-    }
-
-    .prodi-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .footer-grid {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .floating-wa {
-        width: 50px;
-        height: 50px;
-        font-size: 1.6rem;
-    }
-}
-
-/* Tablet: 769px - 1024px */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .prodi-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    h1 {
-        font-size: 2.3rem;
-    }
-}
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
 
 /* ==================== BACK TO TOP BUTTON ==================== */
-/* Tombol ini dibuat oleh JavaScript, styling di sini */
 .back-to-top {
     position: fixed;
     bottom: 100px;
@@ -805,4 +916,114 @@ h2 {
 .back-to-top:hover {
     background: var(--secondary-light);
     transform: translateY(-3px);
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 992px) {
+    .berdikari-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .jalur-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .beasiswa-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .fasilitas-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .kontak-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobile-toggle {
+        display: block;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 80%;
+        height: calc(100vh - 70px);
+        background: white;
+        flex-direction: column;
+        padding: 2rem;
+        gap: 1.5rem;
+        box-shadow: 2px 0 20px rgba(0, 0, 0, 0.1);
+        transition: left 0.3s ease;
+        z-index: 1000;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .hero-buttons {
+        justify-content: center;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.6rem;
+    }
+    
+    .section-padding {
+        padding: 3rem 0;
+    }
+    
+    .berdikari-grid,
+    .jalur-grid,
+    .beasiswa-grid,
+    .fasilitas-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .syarat-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .timeline-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .timeline-date {
+        align-self: center;
+    }
+    
+    .prodi-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .floating-wa {
+        width: 50px;
+        height: 50px;
+        font-size: 1.6rem;
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    .tooltip-text {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .prodi-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .berdikari-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

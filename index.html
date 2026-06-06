@@ -1,383 +1,260 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
-    <!-- 
-    ============================================================
-    METADATA & SEO DASAR
-    ============================================================
-    Halaman: Seleksi Penerimaan Mahasiswa Baru UNW
-    Tujuan: Menarik calon mahasiswa untuk mendaftar
-    ============================================================
-    -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <!-- Meta Description untuk SEO - menjelaskan isi halaman secara singkat -->
-    <meta name="description"
-        content="Seleksi Penerimaan Mahasiswa Baru Universitas Ngudi Waluyo (UNW) - Bergabunglah dengan kampus unggul untuk masa depan gemilang. Pendaftaran dibuka!">
-    <!-- Meta Keywords untuk mesin pencari -->
-    <meta name="keywords" content="PMB UNW, pendaftaran mahasiswa baru UNW, Universitas Ngudi Waluyo">
+    <meta name="description" content="Seleksi Penerimaan Mahasiswa Baru Universitas Ngudi Waluyo (UNW) - UNW Berdikari: Berbudaya Sehat, Disiplin, Karakter Unggul, Mandiri. Kampusnya Para Juara. Pendaftaran dibuka! WA 6285799957642">
+    <meta name="keywords" content="PMB UNW, pendaftaran mahasiswa baru UNW, UNW Berdikari, Kampusnya Para Juara, Universitas Ngudi Waluyo">
     <meta name="author" content="Universitas Ngudi Waluyo">
-    <!-- Title muncul di tab browser - penting untuk SEO -->
-    <title>PMB UNW 2026/2027 | Universitas Ngudi Waluyo</title>
-
-    <!-- 
-    ============================================================
-    FAVICON - Logo di tab browser
-    ============================================================
-    -->
+    <title>Seleksi PMB UNW 2026/2027 | UNW Berdikari - Kampusnya Para Juara</title>
+    
     <link rel="icon" type="image/png" href="https://unw.ac.id/_nuxt/unw.CC306KHJ.png">
-    <link rel="apple-touch-icon" href="https://unw.ac.id/_nuxt/unw.CC306KHJ.png">
-
-    <!-- 
-    ============================================================
-    STYLESHEET
-    ============================================================
-    style.css = styling kustom untuk seluruh website
-    Font Awesome = library icon gratis (Instagram, WA, dll)
-    ============================================================
-    -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
 <body>
 
-    <!-- 
-    ============================================================
-    HEADER / NAVBAR (STICKY)
-    ============================================================
-    Fitur: sticky navbar (tetap di atas saat scroll)
-    Mobile: memiliki tombol toggle untuk menu hamburger
-    ============================================================
-    -->
     <header class="navbar" id="navbar">
         <div class="container nav-container">
-            <!-- Logo Kiri: menampilkan logo UNW dan teks -->
             <div class="logo">
                 <a href="index.html">
-                    <img src="https://unw.ac.id/_nuxt/unw.CC306KHJ.png" alt="Logo UNW"
-                        style="height: 35px; width: auto; margin-right: 8px;">
+                    <img src="https://unw.ac.id/_nuxt/unw.CC306KHJ.png" alt="Logo UNW" style="height: 35px; width: auto; margin-right: 8px;">
                     <span>UNW</span> Ngudi Waluyo
                 </a>
             </div>
-
-            <!-- Tombol hamburger untuk mobile (muncul hanya di layar kecil) -->
             <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
                 <i class="fas fa-bars"></i>
             </button>
-
-            <!-- Menu navigasi utama -->
             <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html" class="active">Beranda</a></li>
+                <li><a href="index.html" class="active">Seleksi PMB</a></li>
                 <li><a href="prodi.html">Program Studi</a></li>
-                <li><a href="#pendaftaran" class="cta-nav">Pendaftaran</a></li>
+                <li><a href="fasilitas.html">Fasilitas</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
             </ul>
         </div>
     </header>
 
     <main>
-        <!-- 
-        ============================================================
-        HERO SECTION - ATTENTION (AIDA)
-        ============================================================
-        Tujuan: Menarik perhatian (Attention) calon mahasiswa
-        Elemen: Badge PMB, judul besar, tombol CTA, gambar kampus
-        ============================================================
-        -->
+        <!-- HERO SECTION - ATTENTION dengan Tagline UNW Berdikari -->
         <section class="hero" id="hero">
             <div class="container hero-grid">
-                <!-- Konten kiri: teks dan tombol -->
                 <div class="hero-content fade-in-up">
-                    <span class="hero-badge">PMB 2026/2027</span>
+                    <span class="hero-badge">✨ UNW Berdikari | Kampusnya Para Juara ✨</span>
                     <h1>Seleksi Penerimaan Mahasiswa Baru <span class="highlight">Universitas Ngudi Waluyo</span></h1>
-                    <p>Berbudaya Sehat, Disiplin (atau Disiplin Tinggi), Karakter Unggul, dan Mandiri</p>
+                    <p class="tagline">"<strong>UNW Berdikari</strong> — Berbudaya Sehat, Disiplin, Karakter Unggul, Mandiri. <strong>Kampusnya Para Juara</strong> yang siap mencetak generasi unggul berprestasi."</p>
+                    <p>Bergabunglah dengan kampus unggul berakreditasi Baik Sekali. Pendaftaran mahasiswa baru telah dibuka untuk gelombang I.</p>
                     <div class="hero-buttons">
-                        <!-- Tombol CTA utama menuju form pendaftaran -->
-                        <a href="#pendaftaran" class="btn btn-primary"><i class="fas fa-arrow-right"></i> Daftar
-                            Sekarang</a>
-                        <!-- Tombol CTA WhatsApp untuk konsultasi -->
-                        <a href="https://wa.me/6285799957642" target="_blank" class="btn btn-outline"><i
-                                class="fab fa-whatsapp"></i> Konsultasi via WA</a>
+                        <a href="kontak.html" class="btn btn-primary"><i class="fas fa-arrow-right"></i> Daftar Sekarang</a>
+                        <a href="https://wa.me/6285799957642" target="_blank" class="btn btn-outline"><i class="fab fa-whatsapp"></i> Konsultasi via WA</a>
                     </div>
                 </div>
-                <!-- Konten kanan: gambar kampus (onerror fallback jika 403) -->
                 <div class="hero-image fade-in-up delay-1">
-                    <img src="https://manajemenritel.unw.ac.id/storage/image/gallery-facility/GEDUNG_UNW.jpg"
-                        alt="Gedung Kampus Universitas Ngudi Waluyo"
-                        onerror="this.src='https://placehold.co/600x400/1e3a5f/white?text=Gedung+UNW'">
+                    <img src="https://manajemenritel.unw.ac.id/storage/image/gallery-facility/GEDUNG_UNW.jpg" alt="Gedung Kampus UNW" onerror="this.src='https://placehold.co/600x400/1e3a5f/white?text=Gedung+UNW'">
                 </div>
             </div>
         </section>
 
-        <!-- 
-        ============================================================
-        ABOUT / TENTANG PMB - INTEREST (AIDA)
-        ============================================================
-        Tujuan: Membangun ketertarikan (Interest) dengan menampilkan keunggulan
-        ============================================================
-        -->
-        <section class="about-pmb section-padding">
+        <!-- NILAI BERDIKARI - Penjelasan Makna -->
+        <section class="berdikari-section section-padding">
             <div class="container">
                 <div class="section-header fade-in">
-                    <h2>Mengapa Harus Kuliah di <span class="highlight">UNW?</span></h2>
-                    <p>Lebih dari sekadar gelar, kami membangun karakter, kompetensi, dan koneksi industri.</p>
+                    <h2><span class="highlight">UNW Berdikari</span></h2>
+                    <p>Landasan utama dalam membentuk pribadi mahasiswa yang unggul dan berdaya saing global.</p>
                 </div>
-                <!-- Grid 3 kolom: 3 keunggulan utama -->
-                <div class="features-grid">
-                    <div class="feature-card fade-in-up">
-                        <div class="feature-icon"><i class="fas fa-chalkboard-user"></i></div>
-                        <h3>Pembelajaran Berbasis Riset & Praktik</h3>
-                        <p>Kurikulum modern yang mengintegrasikan teori dengan proyek nyata dari dunia industri.</p>
+                <div class="berdikari-grid">
+                    <div class="berdikari-card fade-in-up">
+                        <div class="berdikari-icon"><i class="fas fa-heartbeat"></i></div>
+                        <h3>Berbudaya Sehat</h3>
+                        <p>Membangun lingkungan akademik yang mendukung kesehatan fisik dan mental mahasiswa.</p>
                     </div>
-                    <div class="feature-card fade-in-up delay-1">
-                        <div class="feature-icon"><i class="fas fa-users"></i></div>
-                        <h3>Dosen Ahli & Berpengalaman</h3>
-                        <p>Dibimbing oleh dosen profesional dan praktisi yang siap mengantarkanmu sukses.</p>
+                    <div class="berdikari-card fade-in-up delay-1">
+                        <div class="berdikari-icon"><i class="fas fa-clock"></i></div>
+                        <h3>Disiplin</h3>
+                        <p>Menanamkan sikap disiplin tinggi dalam pembelajaran dan kehidupan kampus.</p>
                     </div>
-                    <div class="feature-card fade-in-up delay-2">
-                        <div class="feature-icon"><i class="fas fa-building"></i></div>
-                        <h3>Kampus Modern & Nyaman</h3>
-                        <p>Fasilitas lengkap, laboratorium mutakhir, dan lingkungan akademik yang kondusif.</p>
+                    <div class="berdikari-card fade-in-up delay-2">
+                        <div class="berdikari-icon"><i class="fas fa-star"></i></div>
+                        <h3>Karakter Unggul</h3>
+                        <p>Membentuk karakter juara yang berintegritas, jujur, dan bertanggung jawab.</p>
+                    </div>
+                    <div class="berdikari-card fade-in-up delay-3">
+                        <div class="berdikari-icon"><i class="fas fa-rocket"></i></div>
+                        <h3>Mandiri</h3>
+                        <p>Melatih kemandirian dalam berpikir, bertindak, dan berwirausaha.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 
-        ============================================================
-        ALUR PENDAFTARAN
-        ============================================================
-        Menjelaskan tahapan pendaftaran secara visual (4 langkah)
-        ============================================================
-        -->
-        <section class="alur-section section-padding bg-light">
+        <!-- JALUR PENDAFTARAN - INTEREST -->
+        <section class="jalur-section section-padding bg-light">
             <div class="container">
                 <div class="section-header fade-in">
-                    <h2>Alur Pendaftaran <span class="highlight">Mudah & Cepat</span></h2>
-                    <p>Ikuti 4 langkah sederhana untuk menjadi bagian keluarga besar UNW.</p>
+                    <h2>Jalur <span class="highlight">Seleksi PMB UNW</span></h2>
+                    <p>Pilih jalur masuk yang sesuai dengan prestasi dan kondisi Anda.</p>
                 </div>
-                <div class="alur-grid">
-                    <!-- Step 1 -->
-                    <div class="alur-step fade-in-up">
-                        <div class="step-number">1</div>
-                        <i class="fas fa-edit step-icon"></i>
-                        <h3>Registrasi Online</h3>
-                        <p>Isi formulir pendaftaran di website resmi PMB UNW.</p>
+                <div class="jalur-grid">
+                    <div class="jalur-card fade-in-up">
+                        <i class="fas fa-trophy"></i>
+                        <h3>Jalur Prestasi</h3>
+                        <p>Khusus siswa berprestasi akademik/non-akademik. Bebas tes tulis.</p>
+                        <span class="jalur-badge">Gratis Pendaftaran</span>
                     </div>
-                    <!-- Step 2 -->
-                    <div class="alur-step fade-in-up delay-1">
-                        <div class="step-number">2</div>
-                        <i class="fas fa-cloud-upload-alt step-icon"></i>
-                        <h3>Unggah Berkas</h3>
-                        <p>Upload scan ijazah, rapor, dan dokumen pendukung.</p>
+                    <div class="jalur-card fade-in-up delay-1">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Jalur Nilai Rapor</h3>
+                        <p>Seleksi berdasarkan nilai rapor semester 1-5. Tanpa tes masuk.</p>
+                        <span class="jalur-badge">Populer</span>
                     </div>
-                    <!-- Step 3 -->
-                    <div class="alur-step fade-in-up delay-2">
-                        <div class="step-number">3</div>
-                        <i class="fas fa-money-bill-wave step-icon"></i>
-                        <h3>Pembayaran</h3>
-                        <p>Lakukan pembayaran biaya pendaftaran via bank mitra.</p>
+                    <div class="jalur-card fade-in-up delay-2">
+                        <i class="fas fa-pen-fancy"></i>
+                        <h3>Jalur Tes Tulis</h3>
+                        <p>Jalur reguler dengan ujian tulis kemampuan akademik dasar.</p>
+                        <span class="jalur-badge">Kuota Terbuka</span>
                     </div>
-                    <!-- Step 4 -->
-                    <div class="alur-step fade-in-up delay-3">
-                        <div class="step-number">4</div>
-                        <i class="fas fa-check-circle step-icon"></i>
-                        <h3>Seleksi & Daftar Ulang</h3>
-                        <p>Ikuti seleksi (jika ada) dan lakukan daftar ulang sebagai mahasiswa.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 
-        ============================================================
-        KEUNGGULAN KAMPUS - DESIRE (AIDA)
-        ============================================================
-        Tujuan: Membangun keinginan (Desire) melalui fasilitas & peluang
-        ============================================================
-        -->
-        <section class="keunggulan-section section-padding">
-            <div class="container">
-                <div class="section-header fade-in">
-                    <h2>Keunggulan <span class="highlight">Kampus UNW</span></h2>
-                    <p>Kami memberikan lebih dari yang Anda bayangkan untuk masa depan cerah.</p>
-                </div>
-                <div class="keunggulan-grid">
-                    <div class="keunggulan-card fade-in-up">
-                        <i class="fas fa-laptop-code"></i>
-                        <h3>Lab & Teknologi Mutakhir</h3>
-                        <p>Lab komputer, laboratorium kesehatan, dan studio kreatif standar industri.</p>
-                    </div>
-                    <div class="keunggulan-card fade-in-up delay-1">
+                    <div class="jalur-card fade-in-up delay-3">
                         <i class="fas fa-handshake"></i>
-                        <h3>Peluang Magang & Kerja Sama Industri</h3>
-                        <p>Mitra perusahaan nasional & internasional siap menyerap lulusan terbaik.</p>
-                    </div>
-                    <div class="keunggulan-card fade-in-up delay-2">
-                        <i class="fas fa-globe"></i>
-                        <h3>Jejaring Alumni & Karir Center</h3>
-                        <p>Pusat bimbingan karir aktif membantu penempatan kerja dan wirausaha.</p>
-                    </div>
-                    <div class="keunggulan-card fade-in-up delay-3">
-                        <i class="fas fa-medal"></i>
-                        <h3>Beasiswa Prestasi & Bidikmisi</h3>
-                        <p>Berbagai jalur beasiswa untuk mahasiswa berprestasi dan kurang mampu.</p>
+                        <h3>Jalur Kerjasama</h3>
+                        <p>Khusus karyawan atau rekomendasi dari mitra industri UNW.</p>
+                        <span class="jalur-badge">Kemitraan</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 
-        ============================================================
-        FAQ (FREQUENTLY ASKED QUESTIONS)
-        ============================================================
-        Menjawab pertanyaan umum calon mahasiswa (accordion interaktif)
-        ============================================================
-        -->
-        <section class="faq-section section-padding bg-light">
+        <!-- TIMELINE PMB -->
+        <section class="timeline-section section-padding">
             <div class="container">
                 <div class="section-header fade-in">
-                    <h2>Pertanyaan <span class="highlight">Umum</span></h2>
-                    <p>Temukan jawaban atas pertanyaan seputar PMB UNW.</p>
+                    <h2>Timeline <span class="highlight">Seleksi PMB UNW</span> 2026/2027</h2>
+                    <p>Catat jadwal penting pendaftaran berikut ini.</p>
                 </div>
-                <div class="faq-grid">
-                    <!-- FAQ Item 1 -->
-                    <div class="faq-item fade-in-up">
-                        <div class="faq-question">
-                            <h3>Kapan pendaftaran PMB UNW dibuka?</h3>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Pendaftaran dibuka mulai Januari hingga Agustus 2026. Gelombang I: Januari-Maret,
-                                Gelombang II: April-Juni, Gelombang III: Juli-Agustus.</p>
+                <div class="timeline">
+                    <div class="timeline-item fade-in-up">
+                        <div class="timeline-date">Jan - Mar 2026</div>
+                        <div class="timeline-content">
+                            <h3>Gelombang I <span class="badge-early">Early Bird</span></h3>
+                            <p>Pendaftaran awal dengan biaya pendaftaran termurah. Kuota 500 mahasiswa.</p>
                         </div>
                     </div>
-                    <!-- FAQ Item 2 -->
-                    <div class="faq-item fade-in-up delay-1">
-                        <div class="faq-question">
-                            <h3>Apakah ada tes masuk?</h3>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Untuk sebagian besar prodi dilakukan seleksi berdasarkan rapor dan portofolio. Prodi
-                                tertentu menggunakan tes potensi akademik.</p>
+                    <div class="timeline-item fade-in-up delay-1">
+                        <div class="timeline-date">Apr - Jun 2026</div>
+                        <div class="timeline-content">
+                            <h3>Gelombang II</h3>
+                            <p>Pendaftaran reguler, kuota masih tersedia. Tes tulis dilaksanakan online.</p>
                         </div>
                     </div>
-                    <!-- FAQ Item 3 -->
-                    <div class="faq-item fade-in-up delay-2">
-                        <div class="faq-question">
-                            <h3>Biaya kuliah di UNW terjangkau?</h3>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p>UNW menyediakan skema UKT berjenjang sesuai kemampuan ekonomi keluarga. Tersedia juga
-                                cicilan dan beasiswa penuh.</p>
-                        </div>
-                    </div>
-                    <!-- FAQ Item 4 -->
-                    <div class="faq-item fade-in-up delay-3">
-                        <div class="faq-question">
-                            <h3>Apakah UNW menyediakan asrama?</h3>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Tersedia lingkungan kampus yang asri dan rekomendasi tempat tinggal (kos) sekitar kampus
-                                dengan harga ramah mahasiswa.</p>
+                    <div class="timeline-item fade-in-up delay-2">
+                        <div class="timeline-date">Jul - Agt 2026</div>
+                        <div class="timeline-content">
+                            <h3>Gelombang III</h3>
+                            <p>Pendaftaran akhir, kuota terbatas. Disarankan mendaftar lebih awal.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 
-        ============================================================
-        CTA SECTION - ACTION (AIDA)
-        ============================================================
-        Tujuan: Mendorong tindakan (Action) - pendaftaran & konsultasi
-        ============================================================
-        -->
+        <!-- BEASISWA - DESIRE -->
+        <section class="beasiswa-section section-padding bg-light">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2>Beasiswa <span class="highlight">Unggulan</span></h2>
+                    <p>UNW membuka peluang beasiswa bagi mahasiswa berprestasi dan kurang mampu.</p>
+                </div>
+                <div class="beasiswa-grid">
+                    <div class="beasiswa-card fade-in-up">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>KIP Kuliah</h3>
+                        <p>Pendaftaran gratis + biaya hidup bulanan. Prioritas siswa kurang mampu.</p>
+                    </div>
+                    <div class="beasiswa-card fade-in-up delay-1">
+                        <i class="fas fa-medal"></i>
+                        <h3>Beasiswa Prestasi</h3>
+                        <p>Potongan UKT 50-100% bagi juara olimpiade tingkat provinsi/nasional.</p>
+                    </div>
+                    <div class="beasiswa-card fade-in-up delay-2">
+                        <i class="fas fa-quran"></i>
+                        <h3>Beasiswa Tahfidz</h3>
+                        <p>Potongan UKT 50% untuk hafidz/hafidzah minimal 5 juz.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SYARAT PENDAFTARAN -->
+        <section class="syarat-section section-padding">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2>Syarat <span class="highlight">Pendaftaran</span></h2>
+                    <p>Siapkan dokumen berikut sebelum mendaftar.</p>
+                </div>
+                <div class="syarat-grid fade-in-up">
+                    <div class="syarat-item"><i class="fas fa-id-card"></i><span>Fotokopi Ijazah/SKL (legalisir)</span></div>
+                    <div class="syarat-item"><i class="fas fa-file-alt"></i><span>Fotokopi Rapor semester 1-5</span></div>
+                    <div class="syarat-item"><i class="fas fa-passport"></i><span>Fotokopi KK & KTP (orang tua)</span></div>
+                    <div class="syarat-item"><i class="fas fa-camera"></i><span>Pas foto 3x4 (4 lembar)</span></div>
+                    <div class="syarat-item"><i class="fas fa-certificate"></i><span>Sertifikat prestasi (jika ada)</span></div>
+                    <div class="syarat-item"><i class="fas fa-envelope"></i><span>Email aktif untuk komunikasi</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA - ACTION -->
         <section class="cta-section" id="pendaftaran">
             <div class="container cta-container">
                 <div class="cta-content fade-in-up">
-                    <h2>Siap Menjadi Mahasiswa <span class="highlight">UNW?</span></h2>
-                    <p>Jangan tunda masa depanmu! Kuota terbatas. Daftar sekarang dan dapatkan konsultasi gratis via
-                        WhatsApp.</p>
+                    <h2>Siap Menjadi <span class="highlight">Juara</span> Bersama UNW?</h2>
+                    <p>"UNW Berdikari — Kampusnya Para Juara" Wujudkan mimpimu bersama kami. Kuota terbatas! Daftar sekarang.</p>
                     <div class="cta-buttons">
-                        <a href="#" class="btn btn-primary btn-large"><i class="fas fa-user-graduate"></i> Formulir
-                            Pendaftaran</a>
-                        <a href="https://wa.me/6285799957642" target="_blank" class="btn btn-wa btn-large"><i
-                                class="fab fa-whatsapp"></i> Chat Admin PMB</a>
+                        <a href="kontak.html" class="btn btn-primary btn-large"><i class="fas fa-user-graduate"></i> Formulir Pendaftaran</a>
+                        <a href="https://wa.me/6285799957642" target="_blank" class="btn btn-wa btn-large"><i class="fab fa-whatsapp"></i> Chat Admin PMB</a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- 
-    ============================================================
-    FOOTER
-    ============================================================
-    Berisi: logo, tautan cepat, kontak, sosial media, hak cipta
-    ============================================================
-    -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <!-- Kolom 1: Logo dan sosial media -->
                 <div class="footer-col">
                     <div class="footer-logo">
-                        <img src="https://unw.ac.id/_nuxt/unw.CC306KHJ.png" alt="Logo UNW"
-                            style="height: 35px; width: auto; margin-right: 8px;">
+                        <img src="https://unw.ac.id/_nuxt/unw.CC306KHJ.png" alt="Logo UNW" style="height: 35px; width: auto; margin-right: 8px;">
                         <span>UNW</span> Ngudi Waluyo
                     </div>
-                    <p>Kampus Unggul Berkarakter dan Berwawasan Global.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
+                    <p class="footer-tagline">✨ UNW Berdikari | Kampusnya Para Juara ✨</p>
+                    <p>Berbudaya Sehat • Disiplin • Karakter Unggul • Mandiri</p>
                 </div>
-                <!-- Kolom 2: Tautan cepat -->
                 <div class="footer-col">
-                    <h4>Tautan Cepat</h4>
+                    <h4>Halaman</h4>
                     <ul>
-                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="index.html">Seleksi PMB</a></li>
                         <li><a href="prodi.html">Program Studi</a></li>
-                        <li><a href="#pendaftaran">Pendaftaran</a></li>
-                        <li><a href="#">Beasiswa</a></li>
+                        <li><a href="fasilitas.html">Fasilitas</a></li>
+                        <li><a href="kontak.html">Kontak & Pendaftaran</a></li>
                     </ul>
                 </div>
-                <!-- Kolom 3: Informasi kontak -->
                 <div class="footer-col">
                     <h4>Kontak</h4>
                     <ul>
-                        <li><i class="fas fa-map-marker-alt"></i> Jl. Raya Ungaran - Bawen Km. 15, Ungaran Timur</li>
-                        <li><i class="fas fa-phone"></i> (024) 1234567</li>
-                        <li><i class="fas fa-envelope"></i> pmb@unw.ac.id</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Jl. Diponegoro No.186, Ungaran Timur</li>
+                        <li><i class="fas fa-phone"></i> (024) 6925408</li>
+                        <li><i class="fab fa-whatsapp"></i> 6285799957642</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Universitas Ngudi Waluyo. Seluruh hak cipta dilindungi.</p>
+                <p>&copy; 2026 Universitas Ngudi Waluyo - UNW Berdikari | Kampusnya Para Juara</p>
             </div>
         </div>
     </footer>
 
-    <!-- 
-    ============================================================
-    FLOATING WHATSAPP BUTTON
-    ============================================================
-    Muncul di pojok kanan bawah, selalu terlihat
-    ============================================================
-    -->
-    <a href="https://wa.me/6285799957642" target="_blank" class="floating-wa" aria-label="Chat WhatsApp">
+    <a href="https://wa.me/6285799957642" target="_blank" class="floating-wa">
         <i class="fab fa-whatsapp"></i>
         <span class="tooltip-text">Konsultasi PMB</span>
     </a>
 
-    <!-- JavaScript untuk interaktivitas -->
     <script src="script.js"></script>
 </body>
-
 </html>

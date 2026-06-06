@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="description" content="Kontak dan Pendaftaran Universitas Ngudi Waluyo (UNW) - UNW Berdikari: Kampusnya Para Juara. Hubungi kami untuk konsultasi pendaftaran. WA 6285799957642">
+    <meta name="keywords" content="kontak UNW, pendaftaran UNW, alamat UNW, WhatsApp UNW, UNW Berdikari">
+    <meta name="author" content="Universitas Ngudi Waluyo">
+    <title>Kontak & Pendaftaran UNW | UNW Berdikari - Kampusnya Para Juara</title>
+    
+    <link rel="icon" type="image/png" href="https://unw.ac.id/_nuxt/unw.CC306KHJ.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://unw.ac.id/_nuxt/unw.CC306KHJ.png" alt="Logo UNW" style="height: 35px; width: auto; margin-right: 8px;">
+                    <span>UNW</span> Ngudi Waluyo
+                </a>
+            </div>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Seleksi PMB</a></li>
+                <li><a href="prodi.html">Program Studi</a></li>
+                <li><a href="fasilitas.html">Fasilitas</a></li>
+                <li><a href="kontak.html" class="active">Kontak</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-small">
+            <div class="container">
+                <h1 class="fade-in-up">Kontak & <span class="highlight">Pendaftaran</span></h1>
+                <p class="fade-in-up delay-1">✨ <strong>UNW Berdikari — Kampusnya Para Juara</strong> ✨</p>
+                <p class="fade-in-up delay-2">Hubungi kami untuk konsultasi pendaftaran atau informasi lebih lanjut.</p>
+            </div>
+        </section>
+
+        <!-- KONTAK & FORM -->
+        <section class="kontak-section section-padding">
+            <div class="container">
+                <div class="kontak-grid">
+                    <div class="kontak-info fade-in-up">
+                        <h2>Informasi <span class="highlight">Kontak</span></h2>
+                        <div class="info-list">
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h3>Alamat Kampus</h3>
+                                    <p>Jl. Diponegoro No.186, Gedanganak, Ungaran Timur, Kabupaten Semarang, Jawa Tengah 50519</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h3>Telepon</h3>
+                                    <p>(024) 6925408</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fab fa-whatsapp"></i>
+                                <div>
+                                    <h3>WhatsApp PMB</h3>
+                                    <p><a href="https://wa.me/6285799957642" target="_blank">6285799957642</a> (Konsultasi Pendaftaran)</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h3>Email Resmi</h3>
+                                    <p>pmb@unw.ac.id</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-globe"></i>
+                                <div>
+                                    <h3>Website</h3>
+                                    <p><a href="https://unw.ac.id" target="_blank">www.unw.ac.id</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="kontak-form fade-in-up delay-1">
+                        <h2>Formulir <span class="highlight">Pendaftaran Online</span></h2>
+                        <p>Isi data diri Anda, tim PMB akan menghubungi Anda dalam 1x24 jam.</p>
+                        <form id="formPendaftaran">
+                            <div class="form-group">
+                                <input type="text" placeholder="Nama Lengkap" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Email Aktif" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" placeholder="Nomor WhatsApp" required>
+                            </div>
+                            <div class="form-group">
+                                <select required>
+                                    <option value="">Pilih Program Studi</option>
+                                    <option>S1 Bisnis Digital</option>
+                                    <option>S1 Teknik Informatika</option>
+                                    <option>S1 Keperawatan</option>
+                                    <option>S1 Farmasi</option>
+                                    <option>S1 Gizi</option>
+                                    <option>S1 Kesehatan Masyarakat</option>
+                                    <option>S1 Ilmu Hukum</option>
+                                    <option>S1 Sastra Inggris</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <select required>
+                                    <option value="">Pilih Jalur Pendaftaran</option>
+                                    <option>Jalur Prestasi</option>
+                                    <option>Jalur Nilai Rapor</option>
+                                    <option>Jalur Tes Tulis</option>
+                                    <option>Jalur Kerjasama</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block"><i class="fas fa-paper-plane"></i> Kirim Pendaftaran</button>
+                        </form>
+                        <p class="form-note">✨ Setelah mengirim formulir, admin akan menghubungi Anda via WhatsApp. ✨</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA WHATSAPP -->
+        <section class="cta-wa-section">
+            <div class="container">
+                <div class="cta-wa-box fade-in-up">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>Butuh Konsultasi Cepat?</h3>
+                    <p>Hubungi langsung tim PMB UNW melalui WhatsApp</p>
+                    <a href="https://wa.me/6285799957642" target="_blank" class="btn btn-wa btn-large"><i class="fab fa-whatsapp"></i> Chat Sekarang</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="https://unw.ac.id/_nuxt/unw.CC306KHJ.png" alt="Logo UNW" style="height: 35px; width: auto; margin-right: 8px;">
+                        <span>UNW</span> Ngudi Waluyo
+                    </div>
+                    <p class="footer-tagline">✨ UNW Berdikari | Kampusnya Para Juara ✨</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Halaman</h4>
+                    <ul>
+                        <li><a href="index.html">Seleksi PMB</a></li>
+                        <li><a href="prodi.html">Program Studi</a></li>
+                        <li><a href="fasilitas.html">Fasilitas</a></li>
+                        <li><a href="kontak.html">Kontak & Pendaftaran</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Kami</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Universitas Ngudi Waluyo - UNW Berdikari | Kampusnya Para Juara</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/6285799957642" target="_blank" class="floating-wa">
+        <i class="fab fa-whatsapp"></i>
+        <span class="tooltip-text">Pendaftaran? WA 6285799957642</span>
+    </a>
+
+    <script src="script.js"></script>
+    <script>
+        // Form submission handler
+        document.getElementById('formPendaftaran').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('✅ Terima kasih! Data pendaftaran Anda telah terkirim. Admin PMB UNW akan menghubungi Anda via WhatsApp dalam 1x24 jam.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
