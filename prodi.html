@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <!-- 
+    ============================================================
+    METADATA & SEO DASAR - HALAMAN PROGRAM STUDI
+    ============================================================
+    Halaman: Program Studi Universitas Ngudi Waluyo
+    Tujuan: Menampilkan daftar 8 program studi dengan prospek karier
+    ============================================================
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <!-- Meta Description khusus untuk halaman prodi (SEO) -->
+    <meta name="description"
+        content="Program Studi Unggulan Universitas Ngudi Waluyo (UNW) - Temukan pilihan prodi S1 dan D3 sesuai minat dan bakatmu.">
+    <meta name="keywords"
+        content="prodi UNW, jurusan UNW, fakultas UNW, program studi UNW, informatika UNW, keperawatan UNW">
+    <meta name="author" content="Universitas Ngudi Waluyo">
+    <title>Program Studi UNW | Universitas Ngudi Waluyo</title>
+
+    <!-- 
+    ============================================================
+    FAVICON - Logo UNW di tab browser
+    ============================================================
+    -->
+    <link rel="icon" type="image/png" href="https://unw.ac.id/_nuxt/unw.CC306KHJ.png">
+    <link rel="apple-touch-icon" href="https://unw.ac.id/_nuxt/unw.CC306KHJ.png">
+
+    <!-- 
+    ============================================================
+    STYLESHEET
+    ============================================================
+    style.css = styling kustom (sama dengan index.html)
+    Font Awesome = library icon (font, WA, dll)
+    ============================================================
+    -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- 
+    ============================================================
+    HEADER / NAVBAR (STICKY) - SAMA DENGAN INDEX.HTML
+    ============================================================
+    Fitur: sticky navbar (tetap di atas saat scroll)
+    Perbedaan: menu "Program Studi" memiliki class "active"
+    ============================================================
+    -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <!-- Logo Kiri: menampilkan logo UNW dan teks -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://unw.ac.id/_nuxt/unw.CC306KHJ.png" alt="Logo UNW"
+                        style="height: 35px; width: auto; margin-right: 8px;">
+                    <span>UNW</span> Ngudi Waluyo
+                </a>
+            </div>
+
+            <!-- Tombol hamburger untuk mobile (muncul hanya di layar kecil) -->
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Menu navigasi utama - perhatikan class "active" pada Program Studi -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="prodi.html" class="active">Program Studi</a></li> <!-- Active indicator -->
+                <li><a href="index.html#pendaftaran" class="cta-nav">Pendaftaran</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- 
+        ============================================================
+        HERO SECTION - HALAMAN PRODI
+        ============================================================
+        Hero kecil (tidak setinggi halaman beranda)
+        Menampilkan judul halaman dan deskripsi singkat
+        ============================================================
+        -->
+        <section class="hero-small">
+            <div class="container">
+                <h1 class="fade-in-up">Program Studi <span class="highlight">UNW</span></h1>
+                <p class="fade-in-up delay-1">Pilih program studi terakreditasi dan sesuai dengan passionmu. Masa depan
+                    cerah dimulai dari pilihan tepat.</p>
+            </div>
+        </section>
+
+        <!-- 
+        ============================================================
+        PROGRAM STUDI SECTION - CARD GRID
+        ============================================================
+        Menampilkan 8 program studi dalam bentuk card modern.
+        Setiap card berisi:
+        1. Nama program studi (dengan icon)
+        2. Deskripsi singkat
+        3. Prospek karier (3-4 contoh pekerjaan)
+        
+        Total 8 prodi (Sesuai ketentuan wajib minimal 8)
+        ============================================================
+        -->
+        <section class="prodi-section section-padding">
+            <div class="container">
+                <!-- Header section -->
+                <div class="section-header fade-in">
+                    <h2>Pilihan <span class="highlight">Program Studi</span></h2>
+                    <p>8 program studi unggulan dengan prospek karier menjanjikan.</p>
+                </div>
+
+                <!-- Grid Card Program Studi -->
+                <div class="prodi-grid" id="prodiGrid">
+
+                    <!-- ========================================== -->
+                    <!-- CARD 1: S1 INFORMATIKA -->
+                    <!-- ========================================== -->
+                    <div class="prodi-card fade-in-up">
+                        <div class="prodi-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h3>S1 Informatika</h3>
+                        <p class="prodi-desc">Kurikulum berbasis industri 4.0 dengan fokus pada AI, data science, dan
+                            pengembangan aplikasi mobile.</p>
+                        <div class="prospek">
+                            <strong><i class="fas fa-briefcase"></i> Prospek Karier:</strong>
+                            <span>Software Engineer, Data Analyst, IT Consultant, System Architect.</span>
+                        </div>
+                    </div>
+
+                    <!-- ========================================== -->
+                    <!-- CARD 2: S1 KEPERAWATAN -->
+                    <!-- ========================================== -->
+                    <div class="prodi-card fade-in-up delay-1">
+                        <div class="prodi-icon"><i class="fas fa-heartbeat"></i></div>
+                        <h3>S1 Keperawatan</h3>
+                        <p class="prodi-desc">Lulusan perawat profesional yang kompeten di rumah sakit, klinik, dan
+                            komunitas. Dilengkapi lab skill terpadu.</p>
+                        <div class="prospek">
+                            <strong><i class="fas fa-briefcase"></i> Prospek Karier:</strong>
+                            <span>Perawat Klinis, Ners Spesialis, Dosen Keperawatan, Manajer Pelayanan Kesehatan.</span>
+                        </div>
+                    </div>
+
+                    <!-- ========================================== -->
+                    <!-- CARD 3: S1 MANAJEMEN -->
+                    <!-- ========================================== -->
+                    <div class="prodi-card fade-in-up delay-2">
+                        <div class="prodi-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3>S1 Manajemen</h3>
+                        <p class="prodi-desc">Mencetak entrepreneur dan manajer muda dengan keterampilan digital
+                            marketing, keuangan, dan SDM.</p>
+                        <div class="prospek">
+                            <strong><i class="fas fa-briefcase"></i> Prospek Karier:</strong>
+                            <span>Business Analyst, Marketing Manager, HRD Specialist, Wirausahawan.</span>
+                        </div>
+                    </div>
+
+                    <!-- ========================================== -->
+                    <!-- CARD 4: S1 HUKUM -->
+                    <!-- ========================================== -->
+                    <div class="prodi-card fade-in-up delay-3">
+                        <div class="prodi-icon"><i class="fas fa-gavel"></i></div>
+                        <h3>S1 Hukum</h3>
+                        <p class="prodi-desc">Program studi hukum dengan pendekatan praktik langsung (legal clinic) dan
+                            magang di pengadilan.</p>
+                        <div class="prospek">
+                            <strong><i class="fas fa-briefcase"></i> Prospek Karier:</strong>
+                            <span>Advokat, Legal Officer, PPAT, Jaksa, Hakim (setelah lulus PKPA).</span>
+                        </div>
+                    </div>
+
+                    <!-- ========================================== -->
+                    <!-- CARD 5: S1 FARMASI -->
+                    <!-- ========================================== -->
+                    <div class="prodi-card fade-in-up">
+                        <div class="prodi-icon"><i class="fas fa-pills"></i></div>
+                        <h3>S1 Farmasi</h3>
+                        <p class="prodi-desc">Tenaga apoteker andal di bidang riset obat, distribusi, dan pelayanan
+                            kefarmasian di industri farmasi.</p>
+                        <div class="prospek">
+                            <strong><i class="fas fa-briefcase"></i> Prospek Karier:</strong>
+                            <span>Apoteker, Manager QC/QA Farmasi, Peneliti BBPOM, Tenaga Teknis Kefarmasian.</span>
+                        </div>
+                    </div>
+
+                    <!-- ========================================== -->
+                    <!-- CARD 6: S1 GIZI -->
+                    <!-- ========================================== -->
+                    <div class="prodi-card fade-in-up delay-1">
+                        <div class="prodi-icon"><i class="fas fa-utensils"></i></div>
+                        <h3>S1 Gizi</h3>
+                        <p class="prodi-desc">Ahli gizi yang berperan dalam peningkatan kesehatan masyarakat, manajemen
+                            rumah sakit, dan industri pangan.</p>
+                        <div class="prospek">
+                            <strong><i class="fas fa-briefcase"></i> Prospek Karier:</strong>
+                            <span>Nutritionist, Dietisien, Konsultan Gizi, Pengelola Program Pangan.</span>
+                        </div>
+                    </div>
+
+                    <!-- ========================================== -->
+                    <!-- CARD 7: S1 SASTRA INGGRIS -->
+                    <!-- ========================================== -->
+                    <div class="prodi-card fade-in-up delay-2">
+                        <div class="prodi-icon"><i class="fas fa-language"></i></div>
+                        <h3>S1 Sastra Inggris</h3>
+                        <p class="prodi-desc">Kompetensi bahasa Inggris unggul untuk karier internasional, penerjemah,
+                            dan pendidik.</p>
+                        <div class="prospek">
+                            <strong><i class="fas fa-briefcase"></i> Prospek Karier:</strong>
+                            <span>Interpreter, Translator, Guru/Dosen Bahasa Inggris, Penulis Kreatif.</span>
+                        </div>
+                    </div>
+
+                    <!-- ========================================== -->
+                    <!-- CARD 8: D3 SISTEM INFORMASI -->
+                    <!-- ========================================== -->
+                    <div class="prodi-card fade-in-up delay-3">
+                        <div class="prodi-icon"><i class="fas fa-database"></i></div>
+                        <h3>D3 Sistem Informasi</h3>
+                        <p class="prodi-desc">Praktisi IT yang siap kerja dengan keahlian database, programming web, dan
+                            analisis sistem.</p>
+                        <div class="prospek">
+                            <strong><i class="fas fa-briefcase"></i> Prospek Karier:</strong>
+                            <span>Junior Programmer, IT Support, Database Administrator, EDP Staff.</span>
+                        </div>
+                    </div>
+                    <!-- AKHIR DARI 8 CARD PRODI -->
+
+                </div>
+
+                <!-- 
+                ====================================================
+                CTA MINI (BAWAH PRODI)
+                ====================================================
+                Call to Action tambahan untuk konsultasi via WhatsApp
+                ====================================================
+                -->
+                <div class="cta-mini fade-in-up">
+                    <p>Butuh bantuan memilih prodi yang tepat?</p>
+                    <a href="https://wa.me/6285799957642" target="_blank" class="btn btn-outline"><i
+                            class="fab fa-whatsapp"></i> Konsultasi via WhatsApp</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 
+    ============================================================
+    FOOTER
+    ============================================================
+    Berisi: logo, tautan prodi, kontak, hak cipta
+    ============================================================
+    -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Kolom 1: Logo dan deskripsi -->
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="https://unw.ac.id/_nuxt/unw.CC306KHJ.png" alt="Logo UNW"
+                            style="height: 35px; width: auto; margin-right: 8px;">
+                        <span>UNW</span> Ngudi Waluyo
+                    </div>
+                    <p>Kampus Unggul Berkarakter dan Berwawasan Global.</p>
+                </div>
+                <!-- Kolom 2: Daftar program studi (tautan cepat) -->
+                <div class="footer-col">
+                    <h4>Program Studi</h4>
+                    <ul>
+                        <li><a href="#">Informatika</a></li>
+                        <li><a href="#">Keperawatan</a></li>
+                        <li><a href="#">Manajemen</a></li>
+                        <li><a href="#">Hukum</a></li>
+                    </ul>
+                </div>
+                <!-- Kolom 3: Informasi kontak -->
+                <div class="footer-col">
+                    <h4>Hubungi Kami</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> (024) 1234567</li>
+                        <li><i class="fab fa-whatsapp"></i> 0812-3456-7890</li>
+                        <li><i class="fas fa-envelope"></i> pmb@unw.ac.id</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Universitas Ngudi Waluyo.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 
+    ============================================================
+    FLOATING WHATSAPP BUTTON
+    ============================================================
+    Muncul di pojok kanan bawah, tooltip "Butuh info prodi?"
+    ============================================================
+    -->
+    <a href="https://wa.me/6285799957642" target="_blank" class="floating-wa" aria-label="Chat WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="tooltip-text">Butuh info prodi?</span>
+    </a>
+
+    <!-- JavaScript untuk interaktivitas (sama dengan index.html) -->
+    <script src="script.js"></script>
+</body>
+
+</html>
