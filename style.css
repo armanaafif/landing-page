@@ -1,27 +1,15 @@
-/**
- * ═══════════════════════════════════════════════════════════════════
- * UNIVERSITAS NGUDI WALUYO (UNW) - PMB WEBSITE
- * ═══════════════════════════════════════════════════════════════════
- * Tagline: UNW Berdikari (Berbudaya Sehat, Disiplin, Karakter Unggul, Mandiri)
- * Semboyan: Kampusnya Para Juara
- * ═══════════════════════════════════════════════════════════════════
- */
-
-/* ==================== RESET CSS ==================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ==================== VARIABEL WARNA ==================== */
 :root {
     --primary: #1e3a5f;
     --primary-dark: #0f2b44;
     --primary-light: #2c5a8c;
     --secondary: #c89d3c;
     --secondary-light: #e0b354;
-    --accent-gold: #ffd700;
     --text-dark: #1e2a3a;
     --text-gray: #475569;
     --bg-light: #f8fafc;
@@ -31,7 +19,6 @@
     --transition: all 0.3s ease;
 }
 
-/* ==================== GAYA DASAR ==================== */
 body {
     font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
     line-height: 1.6;
@@ -49,7 +36,6 @@ html {
     padding: 0 24px;
 }
 
-/* ==================== TYPOGRAPHY ==================== */
 h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
@@ -88,12 +74,10 @@ h2 {
     background-color: var(--bg-light);
 }
 
-/* ==================== TAGLINE UNW BERDIKARI ==================== */
 .tagline {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: var(--secondary);
     margin-bottom: 1rem;
-    font-style: italic;
 }
 
 .footer-tagline {
@@ -102,7 +86,6 @@ h2 {
     margin-top: 5px;
 }
 
-/* ==================== BUTTONS ==================== */
 .btn {
     display: inline-flex;
     align-items: center;
@@ -161,7 +144,6 @@ h2 {
     justify-content: center;
 }
 
-/* ==================== NAVBAR STICKY ==================== */
 .navbar {
     background: var(--white);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
@@ -222,7 +204,6 @@ h2 {
     color: var(--primary);
 }
 
-/* ==================== HERO SECTION ==================== */
 .hero {
     padding: 4rem 0 5rem;
     background: linear-gradient(135deg, #f0f9ff 0%, #e6f0fa 100%);
@@ -263,35 +244,32 @@ h2 {
     box-shadow: var(--shadow);
 }
 
-/* ==================== NILAI BERDIKARI ==================== */
-.berdikari-grid {
+.prestasi-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 }
 
-.berdikari-card {
+.prestasi-card {
     background: white;
     padding: 2rem;
     border-radius: 20px;
     text-align: center;
     transition: var(--transition);
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-    border-bottom: 4px solid var(--secondary);
 }
 
-.berdikari-card:hover {
-    transform: translateY(-10px);
+.prestasi-card:hover {
+    transform: translateY(-8px);
     box-shadow: var(--shadow-hover);
 }
 
-.berdikari-icon {
-    font-size: 2.8rem;
+.prestasi-card i {
+    font-size: 2.5rem;
     color: var(--secondary);
     margin-bottom: 1rem;
 }
 
-/* ==================== JALUR PENDAFTARAN ==================== */
 .jalur-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -305,7 +283,6 @@ h2 {
     text-align: center;
     transition: var(--transition);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    position: relative;
 }
 
 .jalur-card:hover {
@@ -319,18 +296,6 @@ h2 {
     margin-bottom: 1rem;
 }
 
-.jalur-badge {
-    display: inline-block;
-    background: var(--secondary-light);
-    color: var(--primary-dark);
-    font-size: 0.7rem;
-    font-weight: bold;
-    padding: 4px 12px;
-    border-radius: 30px;
-    margin-top: 1rem;
-}
-
-/* ==================== TIMELINE ==================== */
 .timeline {
     max-width: 800px;
     margin: 0 auto;
@@ -356,16 +321,6 @@ h2 {
     height: fit-content;
 }
 
-.badge-early {
-    background: #2e7d32;
-    color: white;
-    font-size: 0.7rem;
-    padding: 2px 8px;
-    border-radius: 20px;
-    margin-left: 8px;
-}
-
-/* ==================== BEASISWA ==================== */
 .beasiswa-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -391,34 +346,6 @@ h2 {
     margin-bottom: 1rem;
 }
 
-/* ==================== SYARAT PENDAFTARAN ==================== */
-.syarat-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-}
-
-.syarat-item {
-    background: white;
-    padding: 1rem;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    transition: var(--transition);
-}
-
-.syarat-item i {
-    font-size: 1.5rem;
-    color: var(--secondary);
-}
-
-.syarat-item:hover {
-    transform: translateX(5px);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
-
-/* ==================== CTA SECTION ==================== */
 .cta-section {
     background: linear-gradient(120deg, var(--primary-dark), var(--primary));
     color: white;
@@ -451,7 +378,6 @@ h2 {
     background: var(--secondary-light);
 }
 
-/* ==================== FOOTER ==================== */
 .footer {
     background: #0a1622;
     color: #cbd5e1;
@@ -511,30 +437,6 @@ h2 {
     font-size: 0.9rem;
 }
 
-.social-links {
-    display: flex;
-    gap: 1rem;
-    margin-top: 1.5rem;
-}
-
-.social-links a {
-    background: #1e2a3a;
-    color: white;
-    width: 36px;
-    height: 36px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    transition: var(--transition);
-}
-
-.social-links a:hover {
-    background: var(--secondary);
-    transform: translateY(-3px);
-}
-
-/* ==================== FLOATING WHATSAPP ==================== */
 .floating-wa {
     position: fixed;
     bottom: 30px;
@@ -578,7 +480,6 @@ h2 {
     visibility: visible;
 }
 
-/* ==================== HALAMAN PRODI ==================== */
 .hero-small {
     background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
     padding: 5rem 0 3rem;
@@ -638,27 +539,6 @@ h2 {
     box-shadow: var(--shadow-hover);
 }
 
-.featured-card {
-    border-left: 4px solid var(--secondary);
-    position: relative;
-}
-
-.featured-star {
-    background: var(--secondary-light);
-    color: var(--primary-dark);
-    font-size: 0.7rem;
-    font-weight: bold;
-    padding: 3px 10px;
-    border-radius: 30px;
-    margin-left: 10px;
-    display: inline-block;
-}
-
-.featured-star i {
-    color: #ffc107;
-    margin-right: 4px;
-}
-
 .prodi-icon {
     font-size: 2.5rem;
     color: var(--secondary);
@@ -690,44 +570,6 @@ h2 {
     margin-right: 5px;
 }
 
-/* ==================== AKREDITASI BADGE ==================== */
-.akreditasi-badge {
-    display: inline-block;
-    background: #e0b354;
-    color: #1e2a3a;
-    font-size: 0.7rem;
-    font-weight: bold;
-    padding: 3px 10px;
-    border-radius: 30px;
-    margin-left: 10px;
-    vertical-align: middle;
-}
-
-.akreditasi-badge.akreditasi-a {
-    background: #2e7d32;
-    color: white;
-}
-
-.akreditasi-badge.akreditasi-baik-sekali {
-    background: #0288d1;
-    color: white;
-}
-
-.akreditasi-badge.akreditasi-proses {
-    background: #ed6c02;
-    color: white;
-}
-
-.sumber-data {
-    font-size: 0.7rem;
-    color: #6c757d;
-    margin-top: 12px;
-    padding-top: 8px;
-    border-top: 1px solid #eef2f6;
-    font-style: italic;
-}
-
-/* ==================== INFO TAMBAHAN ==================== */
 .info-tambahan {
     margin-top: 3rem;
     margin-bottom: 2rem;
@@ -749,7 +591,14 @@ h2 {
     margin-top: 3px;
 }
 
-/* ==================== HALAMAN FASILITAS ==================== */
+.cta-mini {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 2rem;
+    background: var(--bg-light);
+    border-radius: 24px;
+}
+
 .fasilitas-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -776,13 +625,33 @@ h2 {
     margin-bottom: 1rem;
 }
 
+.komitmen-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.komitmen-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: center;
+    transition: var(--transition);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.komitmen-card i {
+    font-size: 2.5rem;
+    color: var(--secondary);
+    margin-bottom: 1rem;
+}
+
 .cta-mini-section {
     padding: 3rem 0;
     background: var(--bg-light);
     text-align: center;
 }
 
-/* ==================== HALAMAN KONTAK ==================== */
 .kontak-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -818,7 +687,8 @@ h2 {
     margin-bottom: 5px;
 }
 
-.info-item p, .info-item a {
+.info-item p,
+.info-item a {
     color: var(--text-gray);
     text-decoration: none;
 }
@@ -877,7 +747,16 @@ h2 {
     margin-bottom: 1rem;
 }
 
-/* ==================== ANIMASI FADE-IN ==================== */
+.peta-section {
+    padding: 3rem 0;
+}
+
+.peta-wrapper {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
 .fade-in-up {
     opacity: 0;
     transform: translateY(30px);
@@ -893,7 +772,6 @@ h2 {
 .delay-2 { transition-delay: 0.2s; }
 .delay-3 { transition-delay: 0.3s; }
 
-/* ==================== BACK TO TOP BUTTON ==================== */
 .back-to-top {
     position: fixed;
     bottom: 100px;
@@ -918,18 +796,12 @@ h2 {
     transform: translateY(-3px);
 }
 
-/* ==================== RESPONSIVE ==================== */
 @media (max-width: 992px) {
-    .berdikari-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .jalur-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .beasiswa-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .fasilitas-grid {
+    .prestasi-grid,
+    .jalur-grid,
+    .beasiswa-grid,
+    .fasilitas-grid,
+    .komitmen-grid {
         grid-template-columns: repeat(2, 1fr);
     }
     .kontak-grid {
@@ -982,14 +854,11 @@ h2 {
         padding: 3rem 0;
     }
     
-    .berdikari-grid,
+    .prestasi-grid,
     .jalur-grid,
     .beasiswa-grid,
-    .fasilitas-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .syarat-grid {
+    .fasilitas-grid,
+    .komitmen-grid {
         grid-template-columns: 1fr;
     }
     
@@ -1021,9 +890,6 @@ h2 {
 
 @media (min-width: 769px) and (max-width: 1024px) {
     .prodi-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .berdikari-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
