@@ -893,3 +893,44 @@ h2 {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+/* ==================== ARTIKEL KONTEN PARAGRAF PANJANG ==================== */
+.artikel-konten {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.artikel-konten h3 {
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin: 2rem 0 1rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--secondary);
+}
+
+.artikel-konten h3:first-of-type {
+    margin-top: 0;
+}
+
+.artikel-konten p {
+    font-size: 1.05rem;
+    line-height: 1.9;
+    color: var(--text-gray);
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.artikel-konten .highlight-box {
+    margin-top: 2rem;
+    padding: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .artikel-konten h3 {
+        font-size: 1.3rem;
+    }
+    
+    .artikel-konten p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+}
